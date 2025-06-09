@@ -1,5 +1,9 @@
 name: Sample CICD - MAIN
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
 jobs:
   Build:
     runs-on: self-hosted
