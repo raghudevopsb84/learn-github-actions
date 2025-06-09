@@ -1,5 +1,5 @@
 name: Sample CICD - PR
-on: [push, workflow_dispatch]
+on: [pull_request]
 jobs:
   Build:
     runs-on: self-hosted
