@@ -15,9 +15,14 @@ jobs:
     needs: Test
     steps:
       - run: echo OK
-  Uat_Deploy:
+  Qa_Deploy:
     runs-on: self-hosted
     needs: Dev_deploy
+    steps:
+      - run: echo OK
+  Uat_Deploy:
+    runs-on: self-hosted
+    needs: Qa_deploy
     steps:
       - run: echo OK
   Prod_Deploy:
