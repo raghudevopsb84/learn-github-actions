@@ -8,6 +8,9 @@ on:
       appName:
         required: true
         type: string
+    secrets:
+      vault_token:
+        required: true
 jobs:
   Build:
     runs-on: self-hosted
