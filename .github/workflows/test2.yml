@@ -1,4 +1,4 @@
-name: TEST1
+name: TEST2
 on:
   workflow_call:
     inputs:
@@ -17,10 +17,3 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ inputs.appType }} event."
 
-  EX:
-    uses: raghudevopsb84/learn-github-actions/.github/workflows/test2.yml@main
-    with:
-      appType: 'nodejs'
-      appName: 'cart'
-    secrets:
-      vault_token: ${{ secrets.vault_token }}
