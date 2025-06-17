@@ -6,7 +6,7 @@ on:
       - 'main'
 jobs:
   Build:
-    uses: raghudevopsb84/learn-github-actions/.github/workflows/ci-main.yml@main
+    uses: raghudevopsb84/learn-github-actions/.github/workflows/test1.yml@main
     with:
       appType: 'nodejs'
       appName: 'cart'
