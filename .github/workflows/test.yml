@@ -1,0 +1,14 @@
+name: TEST
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+jobs:
+  Build:
+    uses: raghudevopsb84/learn-github-actions/.github/workflows/ci-main.yml@main
+    with:
+      appType: 'nodejs'
+      appName: 'cart'
+
+
